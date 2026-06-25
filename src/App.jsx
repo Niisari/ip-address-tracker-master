@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Map from "./components/Map";
-import { getIpData } from "./api/ipService"; // <-- Import your new API service!
+import { getIpData } from "./api/ipService";
 import "./App.css";
 import "./styles/Global.css";
 
