@@ -1,0 +1,130 @@
+.app__container {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__header {
+  background: url("../public/images/pattern-bg-mobile.png") no-repeat center
+    center;
+  background-size: cover;
+  text-align: center;
+  height: 36.5vh;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  padding: 1.25rem 0.625rem;
+}
+
+.app__title {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.search__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.search__input,
+.search__button {
+  height: 3.5rem;
+  padding: 1rem 1.375rem;
+}
+
+.search__input {
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 1.125rem;
+  border-radius: 1rem 0 0 1rem;
+  color: var(--Gray-950);
+}
+
+.search__button {
+  border: none;
+  background: black;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 1rem 1rem 0;
+  transition: background 0.2s ease;
+}
+
+.search__button:hover {
+  background: #444;
+}
+
+.coordinates__text {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.results__panel {
+  background: white;
+  border-radius: 15px;
+  padding: 1.563rem;
+  display: flex;
+  max-width: 68.75rem;
+  width: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  box-shadow: 0px 3.125rem 3.125rem -1.563rem rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
+.results__block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+  gap: 0.5rem;
+}
+
+.results__block:last-child {
+  border-right: none;
+}
+
+.results__label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--Gray-400);
+  display: block;
+}
+
+.results__value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--Gray-950);
+}
+
+.leaflet-control-container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .results__panel {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    transform: translate(-50%, 0);
+    gap: 1rem;
+  }
+  .results__block {
+    border-right: none;
+    padding: 0;
+  }
+  .results__value {
+    font-size: 1.1rem;
+  }
+}
