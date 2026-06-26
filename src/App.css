@@ -48,6 +48,10 @@
   color: var(--Gray-950);
 }
 
+.search__input:hover {
+  cursor: pointer;
+}
+
 .search__button {
   border: none;
   background: black;
