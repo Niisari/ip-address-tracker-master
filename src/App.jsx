@@ -52,7 +52,7 @@ function App() {
         <form onSubmit={handleSearch} className="search__form">
           <input
             type="text"
-            placeholder="Search for an IP address or domain"
+            placeholder="Search for any IP address or domain"
             value={searchIp}
             onChange={(e) => setSearchIp(e.target.value)}
             className="search__input"
